@@ -9,3 +9,5 @@ Clone down the repo like normal and cd into the directory to run the following c
 npm i
 ```
 
+# Contributions
+Do not change anything in the Structures Directory. This will cause Commands and Events to fail.
