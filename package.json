@@ -1,0 +1,11 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "author": "Jexxer",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.2.0-dev.1629893276.8a8c69a"
+  }
+}
