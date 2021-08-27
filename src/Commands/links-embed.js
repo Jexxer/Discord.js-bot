@@ -2,6 +2,8 @@ const Command = require("../Structures/Command.js");
 
 const Discord = require("discord.js");
 
+const config = require('../Data/config.json')
+
 module.exports = new Command({
     name: "links",
     description: "Display useful links to member",
@@ -25,12 +27,12 @@ module.exports = new Command({
             .addFields([
                 {
                     name: "Calendar",
-                    value: "[Google Sheet](https://docs.google.com/spreadsheets/d/124WEkwXKAUV83DaftPJHIt-LA5nCogB3F0cRYoJgtQE/edit#gid=1142831674)",
+                    value: `[Google Sheet](${config.calendarlink})`,
                     inline: true
                 },
                 {
                     name: "Zoom",
-                    value: "[Join now](https://generalassembly.zoom.us/j/93372299074?pwd=TnZ0NnpqWlVyNXpERGxXRjZVWExOdz09)",
+                    value: `[Join now](${config.zoomlink})`,
                     inline: true
                 },
                 {
@@ -39,12 +41,12 @@ module.exports = new Command({
                 },
                 {
                     name: "Outcomes",
-                    value: "[Google Classroom](https://classroom.google.com/u/0/c/MzcyNzYyMzQ4OTI3)",
+                    value: `[Google Classroom](${config.outcomeslink})`,
                     inline: true
                 },
                 {
                     name: "GA Github",
-                    value: "[sei-712](https://git.generalassemb.ly/sei-712)",
+                    value: `[sei-712](${config.outcomeslink})`,
                     inline: true
                 },
                 {
@@ -73,4 +75,5 @@ module.exports = new Command({
         message.channel.send({ embeds: [embed] });
 
     }
+    
 })
