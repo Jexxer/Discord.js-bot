@@ -54,13 +54,27 @@ module.exports = new Command({
                     value: '\u200B'
                 },
                 {
-                    name: "Study Music",
-                    value: "[Playlist](https://www.youtube.com/watch?v=tOKak8MSeqY)",
+                    name: "Project1 Gallery",
+                    value: "[Link](https://git.generalassemb.ly/sei-712/project1-gallery/issues)",
                     inline: true
                 },
                 {
-                    name: "???",
-                    value: "[Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)",
+                    name: "Project2 Gallery",
+                    value: "[Link](https://git.generalassemb.ly/sei-712/project2-gallery/issues)",
+                    inline: true
+                },
+                {
+                    name: '\u200B', 
+                    value: '\u200B'
+                },
+                {
+                    name: "Project3 Gallery",
+                    value: "[Link](https://git.generalassemb.ly/sei-712/project3-gallery/issues)",
+                    inline: true
+                },
+                {
+                    name: "Study Music",
+                    value: "[Playlist](https://www.youtube.com/watch?v=tOKak8MSeqY)",
                     inline: true
                 },
                 {

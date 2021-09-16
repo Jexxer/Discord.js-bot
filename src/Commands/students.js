@@ -12,154 +12,220 @@ module.exports = new Command({
 
         const embed = new Discord.MessageEmbed();
 
-        embed
-            .setTitle("SEI-712 Students")
-            .setAuthor(
-            message.client.user.username,
-            message.client.user.avatarURL({dynamic: true}),
-            "https://github.com/Jexxer/Discord.js-bot"
-            )
-            .setDescription("Here are the students that are attending General Assembly's\nSEI-712 class.")
-            .setColor('DARK_PURPLE')
-            .setThumbnail(client.user.avatarURL({dynamic: true}))
-            .setTimestamp()
-            .addFields([
-                {
-                    name: 'Ahzam Bardai',
-                    value: `[Github](https://github.com/AhzamBardai)`,
-                    inline: true
-                },
-                {
-                    name: "Alec Johnson",
-                    value: `[Github](https://github.com/wenjase)`,
-                    inline: true
-                },
-                {
-                    name: 'Alex Kim', 
-                    value: `[Github](https://github.com/alexkimcs)`,
-                    inline: true
-                },
-                {
-                    name: "Andy Zhong",
-                    value: `[Github](https://github.com/andyjzhong)`,
-                    inline: true
-                },
-                {
-                    name: "Cole Rener",
-                    value: `[Github](https://github.com/dishbin)`,
-                    inline: true
-                },
-                {
-                    name: 'Dylan Guma', 
-                    value: `[Github](https://github.com/dguma)`,
-                    inline: true
-                },
-                {
-                    name: 'Jesse Watson',
-                    value: `[Github](https://github.com/Jexxer) - [Linkedin](https://www.linkedin.com/in/jwatsoncode/)`,
-                    inline: true
-                },
-                {
-                    name: 'Johanna Trejo',
-                    value: `[Github](https://github.com/johannat116)`,
-                    inline: true
-                },
-                {
-                    name: 'Kimberly Kruedelbach', 
-                    value: `[Github](https://github.com/Kimberlybree)`,
-                    inline: true
-                },
-                {
-                    name: 'Lawrence Hau',
-                    value: `[Github](https://github.com/LawrenceHau)`,
-                    inline: true
-                },
-                {
-                    name: 'Luke Marino',
-                    value: `[Github](https://github.com/lmarin1197)`,
-                    inline: true
-                },
-                {
-                    name: 'Max Robbins',
-                    value: `[Github](https://github.com/mjrobbins18)`,
-                    inline: true
-                },
-                {
-                    name: 'Menty Sisay',
-                    value: `[Github](https://github.com/mentysisay)`,
-                    inline: true
-                },
-                {
-                    name: 'Michael Dunn-O\'Connor',
-                    value: `[Github](https://github.com/dunnoconnor) - [Linkedin](https://www.linkedin.com/in/michael-dunn-o-connor/)`,
-                    inline: true
-                },
-                {
-                    name: 'Mohamud Qasim',
-                    value: `[Github](https://github.com/moqasim)`,
-                    inline: true
-                },
-                {
-                    name: 'Naeem Gibson',
-                    value: `[Github](https://github.com/naeemgibson)`,
-                    inline: true
-                },
-                {
-                    name: 'Nita Lo',
-                    value: `[Github](https://github.com/nlo88)`,
-                    inline: true
-                },
-                {
-                    name: 'Omar Abudeh',
-                    value: `[Github](https://github.com/evolvd444) - [Linkedin](https://www.linkedin.com/in/omar-abudeh/)`,
-                    inline: true
-                },
-                {
-                    name: 'Patrick Milligan',
-                    value: `[Github](https://github.com/rinkratmilly)`,
-                    inline: true
-                },
-                {
-                    name: 'Roxie Schnoor',
-                    value: `[Github](https://github.com/roxieetc)`,
-                    inline: true
-                },
-                {
-                    name: 'Samon Oum',
-                    value: `[Github](https://github.com/oumsamon)`,
-                    inline: true
-                },
-                {
-                    name: 'Sean Coleman',
-                    value: `[Github](https://github.com/seanclmn)`,
-                    inline: true
-                },
-                {
-                    name: 'Todd Peltzer',
-                    value: `[Github](https://github.com/ToddPeltzer)`,
-                    inline: true
-                },
-                {
-                    name: 'Troi Vergara',
-                    value: `[Github](https://github.com/tverg419)`,
-                    inline: true
-                },
-                {
-                    name: 'Zachary Rehbein',
-                    value: `[Github](https://git.generalassemb.ly/zrehbein)`,
-                    inline: true
-                },
-                {
-                    name: 'Zavier Lowe',
-                    value: `[Github](https://github.com/ZavierLowe)`,
-                    inline: true
-                }
-            ])
-            .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
-            
+        switch(args[1]){
+            case "Andy": 
+                embed
+                    .setTitle("Andy Zhong")
+                    .setDescription("This is a collection of information and links related to Andy Zhong")
+                    .setColor('ORANGE')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .setImage("https://i.imgur.com/C2nXTcr.jpg") // link to pic of Andy
+                    .addFields([
+                        {
+                            name: "Github",
+                            value: `[Link](https://github.com/andyjzhong)`,
+                            inline: true
+                        },
+                        {
+                            name: "Linkedin",
+                            value: `[Link](https://www.linkedin.com/in/andyjzhong/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Portfolio",
+                            value: `[Link](https://andyzhong.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', // empty field for line breaks
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project1",
+                            value: `[Github](https://github.com/andyjzhong/roast)\n[Live Site](https://andyjzhong.github.io/roast/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project2",
+                            value: `[Github](https://github.com/andyjzhong/seatfreak)\n[Live Site](https://seatfreak-ajz.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project3 Frontend",
+                            value: `[Github](https://github.com/porto-app/porto-client) - [Live](http://porto-app.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project3 Backend",
+                            value: `[Github](https://github.com/porto-app/porto-server) - [Live](https://porto-app-server.herokuapp.com/profiles)`,
+                            inline: true
+                        },
+                        
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    message.channel.send({ embeds: [embed] });
+                break;
+            case "test": 
+                message.reply("test works!");
+                break;
+            default:
+                embed
+                    .setTitle("SEI-712 Students")
+                    .setAuthor(
+                    message.client.user.username,
+                    message.client.user.avatarURL({dynamic: true}),
+                    "https://github.com/Jexxer/Discord.js-bot"
+                    )
+                    .setDescription("Here are the students that are attending General Assembly's\nSEI-712 class.")
+                    .setColor('DARK_PURPLE')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .addFields([
+                        {
+                            name: 'Ahzam Bardai',
+                            value: `[Github](https://github.com/AhzamBardai)`,
+                            inline: true
+                        },
+                        {
+                            name: "Alec Johnson",
+                            value: `[Github](https://github.com/wenjase)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Alex Kim', 
+                            value: `[Github](https://github.com/alexkimcs)`,
+                            inline: true
+                        },
+                        {
+                            name: "Andy Zhong",
+                            value: `[Github](https://github.com/andyjzhong) - [Linkedin](https://www.linkedin.com/in/andyjzhong/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Cole Rener",
+                            value: `[Github](https://github.com/dishbin) - [Linkedin](https://www.linkedin.com/in/cole-rener/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Dylan Guma', 
+                            value: `[Github](https://github.com/dguma)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Jesse Watson',
+                            value: `[Github](https://github.com/Jexxer) - [Linkedin](https://www.linkedin.com/in/jwatsoncode/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Johanna Trejo',
+                            value: `[Github](https://github.com/johannat116)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Kimberly Kruedelbach', 
+                            value: `[Github](https://github.com/Kimberlybree) - [Linkedin](https://www.linkedin.com/in/kimberlybree/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Lawrence Hau',
+                            value: `[Github](https://github.com/LawrenceHau)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Luke Marino',
+                            value: `[Github](https://github.com/lmarin1197)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Max Robbins',
+                            value: `[Github](https://github.com/mjrobbins18) - [Linkedin](https://www.linkedin.com/in/maxwell-robbins-1b614a23/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Menty Sisay',
+                            value: `[Github](https://github.com/mentysisay)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Michael Dunn-O\'Connor',
+                            value: `[Github](https://github.com/dunnoconnor) - [Linkedin](https://www.linkedin.com/in/michael-dunn-o-connor/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Mohamud Qasim',
+                            value: `[Github](https://github.com/moqasim)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Naeem Gibson',
+                            value: `[Github](https://github.com/naeemgibson)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Nita Lo',
+                            value: `[Github](https://github.com/nlo88) - [Linkedin](https://www.linkedin.com/in/nita-lo/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Omar Abudeh',
+                            value: `[Github](https://github.com/evolvd444) - [Linkedin](https://www.linkedin.com/in/omar-abudeh/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Patrick Milligan',
+                            value: `[Github](https://github.com/rinkratmilly) - [Linkedin](https://www.linkedin.com/in/pamilligan/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Roxie Schnoor',
+                            value: `[Github](https://github.com/roxieetc) - [Linkedin](https://www.linkedin.com/in/roxieschnoor/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Samon Oum',
+                            value: `[Github](https://github.com/oumsamon)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Sean Coleman',
+                            value: `[Github](https://github.com/seanclmn)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Todd Peltzer',
+                            value: `[Github](https://github.com/ToddPeltzer) - [Linkedin](https://www.linkedin.com/in/todd-peltzer/)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Troi Vergara',
+                            value: `[Github](https://github.com/tverg419)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Zachary Rehbein',
+                            value: `[Github](https://git.generalassemb.ly/zrehbein)`,
+                            inline: true
+                        },
+                        {
+                            name: 'Zavier Lowe',
+                            value: `[Github](https://github.com/ZavierLowe)`,
+                            inline: true
+                        }
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    
 
 
-        message.channel.send({ embeds: [embed] });
+                    message.channel.send({ embeds: [embed] });
+
+        }
+
+        
 
     }
     
