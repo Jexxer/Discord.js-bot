@@ -12,8 +12,79 @@ module.exports = new Command({
 
         const embed = new Discord.MessageEmbed();
 
-        switch(args[1]){
-            case "Andy": 
+        switch(args[1]?.toLowerCase()){
+            case ("ahzam"): 
+                embed
+                    .setTitle("Ahzam Bardai")
+                    .setDescription("This is a collection of information and links related to Ahzam Bardai")
+                    .setColor('GOLD')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .setImage("https://media-exp1.licdn.com/dms/image/C4D03AQEX9aGEaaCz2w/profile-displayphoto-shrink_800_800/0/1628395696805?e=1639612800&v=beta&t=1LRtHsRwUOUnhRm9SOusUe1YbnOHTOMDAUM0IfrtktM") // link to pic of Ahzam
+                    .addFields([
+                        {
+                            name: "Github",
+                            value: `[Link](https://github.com/AhzamBardai)`,
+                            inline: true
+                        },
+                        {
+                            name: "Linkedin",
+                            value: `[Link](https://www.linkedin.com/in/ahzam-bardai/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Portfolio",
+                            value: `[Link](https://www.ahzambardai.me/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', // empty field for line breaks
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project1",
+                            value: `[Github](https://github.com/AhzamBardai/Card-Switch)\n[Live Site](https://ahzambardai.github.io/Card-Switch/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project2",
+                            value: `[Github](https://github.com/AhzamBardai/Dummy-Buy)\n[Live Site](https://dummy-buy.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project3 Frontend",
+                            value: `[Github](https://github.com/AhzamBardai/Zatta) - [Live](https://zatta.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project3 Backend",
+                            value: `[Github](https://github.com/ToddPeltzer/Zatta-Backend) - [Live](https://zatta1.herokuapp.com/api/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project4 Frontend",
+                            value: `[Github](https://github.com/AhzamBardai/Stuco/tree/dev) - [Live](https://plano-stuco.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project4 Backend",
+                            value: `[Github](https://github.com/AhzamBardai/Stuco-backend/tree/dev) - [Live](https://plano-stuco.herokuapp.com/api/)`,
+                            inline: true
+                        },
+                        
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    message.channel.send({ embeds: [embed] });
+                    break;
+            case ("andy"): 
                 embed
                     .setTitle("Andy Zhong")
                     .setDescription("This is a collection of information and links related to Andy Zhong")
@@ -65,6 +136,20 @@ module.exports = new Command({
                             value: `[Github](https://github.com/porto-app/porto-server) - [Live](https://porto-app-server.herokuapp.com/profiles)`,
                             inline: true
                         },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project4 Frontend",
+                            value: `[Github](https://github.com/andyjzhong/flint) - [Live](https://flint-finance.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project4 Backend",
+                            value: `[Github](https://github.com/andyjzhong/flint-server) - [Live](https://flint-server.herokuapp.com/)`,
+                            inline: true
+                        },
                         
                     ])
                     .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
@@ -81,7 +166,7 @@ module.exports = new Command({
                     message.client.user.avatarURL({dynamic: true}),
                     "https://github.com/Jexxer/Discord.js-bot"
                     )
-                    .setDescription("Here are the students that are attending General Assembly's\nSEI-712 class.")
+                    .setDescription("Here are the students that completed General Assembly's\nSEI-712 class.")
                     .setColor('DARK_PURPLE')
                     .setThumbnail(client.user.avatarURL({dynamic: true}))
                     .setTimestamp()
@@ -119,11 +204,6 @@ module.exports = new Command({
                         {
                             name: 'Jesse Watson',
                             value: `[Github](https://github.com/Jexxer) - [Linkedin](https://www.linkedin.com/in/jwatsoncode/)`,
-                            inline: true
-                        },
-                        {
-                            name: 'Johanna Trejo',
-                            value: `[Github](https://github.com/johannat116)`,
                             inline: true
                         },
                         {
