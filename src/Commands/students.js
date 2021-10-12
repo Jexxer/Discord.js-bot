@@ -339,7 +339,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Samon Oum',
-                            value: `[Github](https://github.com/oumsamon)`,
+                            value: `[Github](https://github.com/oumsamon) - [Linkedin](https://www.linkedin.com/in/sam-oum/)`,
                             inline: true
                         },
                         {
