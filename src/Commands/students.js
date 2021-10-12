@@ -299,7 +299,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Menty Sisay',
-                            value: `[Github](https://github.com/mentysisay)`,
+                            value: `[Github](https://github.com/mentysisay) - [Linkedin](https://www.linkedin.com/in/mentysisay/)`,
                             inline: true
                         },
                         {
