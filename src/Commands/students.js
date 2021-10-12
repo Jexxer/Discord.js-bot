@@ -309,7 +309,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Mohamud Qasim',
-                            value: `[Github](https://github.com/moqasim)`,
+                            value: `[Github](https://github.com/moqasim) - [Linkedin](https://www.linkedin.com/in/qasimmohamed/)`,
                             inline: true
                         },
                         {
