@@ -254,7 +254,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Alex Kim', 
-                            value: `[Github](https://github.com/alexkimcs)`,
+                            value: `[Github](https://github.com/alexkimcs) - [Linkedin](https://www.linkedin.com/in/alex-kim-303/)`,
                             inline: true
                         },
                         {
