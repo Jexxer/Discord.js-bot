@@ -269,7 +269,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Dylan Guma', 
-                            value: `[Github](https://github.com/dguma)`,
+                            value: `[Github](https://github.com/dguma) - [Linkedin](https://www.linkedin.com/in/dylan-guma-5217b255/)`,
                             inline: true
                         },
                         {
