@@ -84,6 +84,77 @@ module.exports = new Command({
                     .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
                     message.channel.send({ embeds: [embed] });
                     break;
+            case ("alec"): 
+            embed
+                .setTitle("Alec Johnson")
+                .setDescription("This is a collection of information and links related to Alec Johnson")
+                .setColor('NAVY')
+                .setThumbnail(client.user.avatarURL({dynamic: true}))
+                .setTimestamp()
+                .setImage("https://media-exp1.licdn.com/dms/image/C4E03AQGlefBTTyprQw/profile-displayphoto-shrink_800_800/0/1628474543944?e=1639612800&v=beta&t=2eJON75v5NExJViLU7LvLFxGfnkxNac07q9F5nYT9Jk") // link to pic of Alec
+                .addFields([
+                    {
+                        name: "Github",
+                        value: `[Link](https://github.com/wenjase)`,
+                        inline: true
+                    },
+                    {
+                        name: "Linkedin",
+                        value: `[Link](https://www.linkedin.com/in/alec-johnson-252a09212/)`,
+                        inline: true
+                    },
+                    {
+                        name: "Portfolio",
+                        value: `[Link](https://www.google.com/)`,
+                        inline: true
+                    },
+                    {
+                        name: '\u200B', // empty field for line breaks
+                        value: '\u200B'
+                    },
+                    {
+                        name: "Project1",
+                        value: `[Github](https://github.com/wenjase/dog-breeds)\n[Live Site](https://wenjase.github.io/dog-breeds/)`,
+                        inline: true
+                    },
+                    {
+                        name: "Project2",
+                        value: `[Github](https://github.com/wenjase/Harvard-project)\n[Live Site](https://dota2-sei712.surge.sh/)`,
+                        inline: true
+                    },
+                    {
+                        name: '\u200B', 
+                        value: '\u200B'
+                    },
+                    {
+                        name: "Project3 Frontend",
+                        value: `[Github](https://github.com/AhzamBardai/Zatta) - [Live](https://zatta.herokuapp.com/)`,
+                        inline: true
+                    },
+                    {
+                        name: "Project3 Backend",
+                        value: `[Github](https://github.com/ToddPeltzer/Zatta-Backend) - [Live](https://zatta1.herokuapp.com/api/)`,
+                        inline: true
+                    },
+                    {
+                        name: '\u200B', 
+                        value: '\u200B'
+                    },
+                    {
+                        name: "Project4 Frontend",
+                        value: `[Github](https://github.com/wenjase/frontend-project4) - [Live](https://www.google.com/)`,
+                        inline: true
+                    },
+                    {
+                        name: "Project4 Backend",
+                        value: `[Github](https://github.com/wenjase/project-4/tree/dev) - [Live](https://www.googel.com/)`,
+                        inline: true
+                    },
+                    
+                ])
+                .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                message.channel.send({ embeds: [embed] });
+                break;
             case ("andy"): 
                 embed
                     .setTitle("Andy Zhong")
@@ -173,7 +244,7 @@ module.exports = new Command({
                     .addFields([
                         {
                             name: 'Ahzam Bardai',
-                            value: `[Github](https://github.com/AhzamBardai)`,
+                            value: `[Github](https://github.com/AhzamBardai) - [Linkedin](https://www.linkedin.com/in/ahzam-bardai/)`,
                             inline: true
                         },
                         {
