@@ -359,7 +359,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Zachary Rehbein',
-                            value: `[Github](https://git.generalassemb.ly/zrehbein)`,
+                            value: `[Github](https://git.generalassemb.ly/zrehbein) - [Linkedin](https://www.linkedin.com/in/zacharyrehbein/)`,
                             inline: true
                         },
                         {
