@@ -249,7 +249,7 @@ module.exports = new Command({
                         },
                         {
                             name: "Alec Johnson",
-                            value: `[Github](https://github.com/wenjase)`,
+                            value: `[Github](https://github.com/wenjase) - [Linkedin](https://www.linkedin.com/in/alec-johnson-252a09212/)`,
                             inline: true
                         },
                         {
