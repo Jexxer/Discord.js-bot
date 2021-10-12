@@ -105,7 +105,7 @@ module.exports = new Command({
                     },
                     {
                         name: "Portfolio",
-                        value: `[Link](https://www.google.com/)`,
+                        value: `[Link](https://alec-johnson.squarespace.com/)`,
                         inline: true
                     },
                     {
