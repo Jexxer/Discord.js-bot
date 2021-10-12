@@ -284,7 +284,7 @@ module.exports = new Command({
                         },
                         {
                             name: 'Lawrence Hau',
-                            value: `[Github](https://github.com/LawrenceHau)`,
+                            value: `[Github](https://github.com/LawrenceHau) - [Linkedin](https://www.linkedin.com/in/lawrencechristopherhau/)`,
                             inline: true
                         },
                         {
