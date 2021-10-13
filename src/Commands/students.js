@@ -300,7 +300,7 @@ module.exports = new Command({
             case ("cole"): 
                 embed
                     .setTitle("Cole Rener")
-                    .setDescription("This is a collection of information and links related to Andy Zhong")
+                    .setDescription("This is a collection of information and links related to Cole Rener")
                     .setColor('ORANGE')
                     .setThumbnail(client.user.avatarURL({dynamic: true}))
                     .setTimestamp()
