@@ -155,6 +155,77 @@ module.exports = new Command({
                 .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
                 message.channel.send({ embeds: [embed] });
                 break;
+            case ("alex"): 
+                embed
+                    .setTitle("Alex Kim")
+                    .setDescription("This is a collection of information and links related to Alex Kim")
+                    .setColor('PURPLE')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .setImage("https://media-exp1.licdn.com/dms/image/C4D03AQGIiDULyjo1jQ/profile-displayphoto-shrink_800_800/0/1623282988413?e=1639612800&v=beta&t=dJrmLEa0zsVCgZwEoovNPbX4iZQeAAUCi6IYHAtVXV4") // link to pic of Alex
+                    .addFields([
+                        {
+                            name: "Github",
+                            value: `[Link](https://github.com/alexkimcs)`,
+                            inline: true
+                        },
+                        {
+                            name: "Linkedin",
+                            value: `[Link](https://www.linkedin.com/in/alex-kim-303/)`,
+                            inline: true
+                        },
+                        // {
+                        //     name: "Portfolio",
+                        //     value: `[Link](https://andyzhong.com/)`,
+                        //     inline: true
+                        // },
+                        {
+                            name: '\u200B', // empty field for line breaks
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project1",
+                            value: `[Github](https://github.com/alexkimcs/Jeopardy)\n[Live Site](https://alexkimcs.github.io/Jeopardy/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project2",
+                            value: `[Github](https://github.com/alexkimcs/React-NaturalDisasters-Tracker)\n[Live Site](https://disaster-react-app.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project3 Frontend",
+                            value: `[Github](https://github.com/alexkimcs/CHATT-E_frontend) - [Live](https://chatte-frontend.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project3 Backend",
+                            value: `[Github](https://github.com/oumsamon/chatte_backke) - [Live](https://github.com/oumsamon/chatte_backke/settings/access)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project4 Frontend",
+                            value: `[Github](https://github.com/alexkimcs/moon_app/tree/master/frontend)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project4 Backend",
+                            value: `[Github](https://github.com/alexkimcs/moon_app/tree/master)`,
+                            inline: true
+                        },
+                        
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    message.channel.send({ embeds: [embed] });
+                break;
             case ("andy"): 
                 embed
                     .setTitle("Andy Zhong")
@@ -226,42 +297,42 @@ module.exports = new Command({
                     .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
                     message.channel.send({ embeds: [embed] });
                 break;
-            case ("alex"): 
+            case ("cole"): 
                 embed
-                    .setTitle("Alex Kim")
-                    .setDescription("This is a collection of information and links related to Alex Kim")
-                    .setColor('PURPLE')
+                    .setTitle("Cole Rener")
+                    .setDescription("This is a collection of information and links related to Andy Zhong")
+                    .setColor('ORANGE')
                     .setThumbnail(client.user.avatarURL({dynamic: true}))
                     .setTimestamp()
-                    .setImage("https://media-exp1.licdn.com/dms/image/C4D03AQGIiDULyjo1jQ/profile-displayphoto-shrink_800_800/0/1623282988413?e=1639612800&v=beta&t=dJrmLEa0zsVCgZwEoovNPbX4iZQeAAUCi6IYHAtVXV4") // link to pic of Andy
+                    .setImage("https://media-exp1.licdn.com/dms/image/C5603AQEQhSV3Txwcmg/profile-displayphoto-shrink_800_800/0/1587762748337?e=1639612800&v=beta&t=bzZApfEoiqpg8_5FnH50KLY0Co6vwPVf2QAQWpjIRdk") // link to pic of Cole
                     .addFields([
                         {
                             name: "Github",
-                            value: `[Link](https://github.com/alexkimcs)`,
+                            value: `[Link](https://github.com/dishbin)`,
                             inline: true
                         },
                         {
                             name: "Linkedin",
-                            value: `[Link](https://www.linkedin.com/in/alex-kim-303/)`,
+                            value: `[Link](https://www.linkedin.com/in/cole-rener/)`,
                             inline: true
                         },
-                        // {
-                        //     name: "Portfolio",
-                        //     value: `[Link](https://andyzhong.com/)`,
-                        //     inline: true
-                        // },
+                        {
+                            name: "Portfolio",
+                            value: `[Link](https://dishbin.github.io/)`,
+                            inline: true
+                        },
                         {
                             name: '\u200B', // empty field for line breaks
                             value: '\u200B'
                         },
                         {
                             name: "Project1",
-                            value: `[Github](https://github.com/alexkimcs/Jeopardy)\n[Live Site](https://alexkimcs.github.io/Jeopardy/)`,
+                            value: `[Github](https://github.com/dishbin/ear-trainer)\n[Live Site](https://dishbin.github.io/ear-trainer/)`,
                             inline: true
                         },
                         {
                             name: "Project2",
-                            value: `[Github](https://github.com/alexkimcs/React-NaturalDisasters-Tracker)\n[Live Site](https://disaster-react-app.herokuapp.com/)`,
+                            value: `[Github](https://github.com/dishbin/paper-trail)\n[Live Site](https://the-paper-trail.herokuapp.com/)`,
                             inline: true
                         },
                         {
@@ -270,12 +341,12 @@ module.exports = new Command({
                         },
                         {
                             name: "Project3 Frontend",
-                            value: `[Github](https://github.com/alexkimcs/CHATT-E_frontend) - [Live](https://chatte-frontend.herokuapp.com/)`,
+                            value: `[Github](https://github.com/Feedback-Loop-App/frontend) - [Live](https://feedbackloopapp.herokuapp.com/)`,
                             inline: true
                         },
                         {
                             name: "Project3 Backend",
-                            value: `[Github](https://github.com/oumsamon/chatte_backke) - [Live](https://github.com/oumsamon/chatte_backke/settings/access)`,
+                            value: `[Github](https://github.com/Feedback-Loop-App/backend) - [Live](https://feedbackloopbackend.herokuapp.com/)`,
                             inline: true
                         },
                         {
@@ -284,12 +355,12 @@ module.exports = new Command({
                         },
                         {
                             name: "Project4 Frontend",
-                            value: `[Github](https://github.com/alexkimcs/moon_app/tree/master/frontend)`,
+                            value: `[Github](https://github.com/DataCollectiveTeam/Data-Collective) - [Live](https://datacollective.herokuapp.com/)`,
                             inline: true
                         },
                         {
                             name: "Project4 Backend",
-                            value: `[Github](https://github.com/alexkimcs/moon_app/tree/master)`,
+                            value: `[Github](https://github.com/DataCollectiveTeam/Data-Collective-Backend) - [Live](https://datacollectivebackend.herokuapp.com/)`,
                             inline: true
                         },
                         
