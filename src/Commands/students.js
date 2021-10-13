@@ -226,6 +226,77 @@ module.exports = new Command({
                     .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
                     message.channel.send({ embeds: [embed] });
                 break;
+            case ("alex"): 
+                embed
+                    .setTitle("Alex Kim")
+                    .setDescription("This is a collection of information and links related to Alex Kim")
+                    .setColor('PURPLE')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .setImage("https://media-exp1.licdn.com/dms/image/C4D03AQGIiDULyjo1jQ/profile-displayphoto-shrink_800_800/0/1623282988413?e=1639612800&v=beta&t=dJrmLEa0zsVCgZwEoovNPbX4iZQeAAUCi6IYHAtVXV4") // link to pic of Andy
+                    .addFields([
+                        {
+                            name: "Github",
+                            value: `[Link](https://github.com/alexkimcs)`,
+                            inline: true
+                        },
+                        {
+                            name: "Linkedin",
+                            value: `[Link](https://www.linkedin.com/in/alex-kim-303/)`,
+                            inline: true
+                        },
+                        // {
+                        //     name: "Portfolio",
+                        //     value: `[Link](https://andyzhong.com/)`,
+                        //     inline: true
+                        // },
+                        {
+                            name: '\u200B', // empty field for line breaks
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project1",
+                            value: `[Github](https://github.com/alexkimcs/Jeopardy)\n[Live Site](https://alexkimcs.github.io/Jeopardy/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project2",
+                            value: `[Github](https://github.com/alexkimcs/React-NaturalDisasters-Tracker)\n[Live Site](https://disaster-react-app.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project3 Frontend",
+                            value: `[Github](https://github.com/alexkimcs/CHATT-E_frontend) - [Live](https://chatte-frontend.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project3 Backend",
+                            value: `[Github](https://github.com/oumsamon/chatte_backke) - [Live](https://github.com/oumsamon/chatte_backke/settings/access)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project4 Frontend",
+                            value: `[Github](https://github.com/alexkimcs/moon_app/tree/master/frontend)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project4 Backend",
+                            value: `[Github](https://github.com/alexkimcs/moon_app/tree/master)`,
+                            inline: true
+                        },
+                        
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    message.channel.send({ embeds: [embed] });
+                break;
             case "test": 
                 message.reply("test works!");
                 break;
