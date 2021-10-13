@@ -368,6 +368,77 @@ module.exports = new Command({
                     .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
                     message.channel.send({ embeds: [embed] });
                 break;
+            case ("dylan"): 
+                embed
+                    .setTitle("Dylan Guma")
+                    .setDescription("This is a collection of information and links related to Dylan Guma")
+                    .setColor('GREEN')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .setImage("https://avatars.githubusercontent.com/u/5438181?v=4") // link to pic of Dylan
+                    .addFields([
+                        {
+                            name: "Github",
+                            value: `[Link](https://github.com/dguma)`,
+                            inline: true
+                        },
+                        {
+                            name: "Linkedin",
+                            value: `[Link](https://www.linkedin.com/in/dylan-guma-5217b255/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Portfolio",
+                            value: `[Link](https://dguma.github.io/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', // empty field for line breaks
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project1",
+                            value: `[Github](https://github.com/dguma/Galaga-Arcade-Game)\n[Live Site](https://dguma.github.io/Galaga-Arcade-Game/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project2",
+                            value: `[Github](https://github.com/dguma/marvel-comics-project)\n[Live Site](https://marvel-comics-project.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project3 Frontend",
+                            value: `[Github](https://github.com/alexkimcs/CHATT-E_frontend) - [Live](https://chatte-frontend.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project3 Backend",
+                            value: `[Github](https://github.com/oumsamon/chatte_backke) - [Live](https://github.com/oumsamon/chatte_backke/settings/access)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project4 Frontend",
+                            value: `[Github](https://github.com/dguma/toMasterDev) - [Live](https://to-master-dev.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project4 Backend",
+                            value: `[Github](https://github.com/dguma/toMasterDev-Backend) - [Live](https://warm-harbor-96907.herokuapp.com/)`,
+                            inline: true
+                        },
+                        
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    message.channel.send({ embeds: [embed] });
+                break;
             case "test": 
                 message.reply("test works!");
                 break;
