@@ -136,20 +136,20 @@ module.exports = new Command({
                         value: `[Github](https://github.com/ToddPeltzer/Zatta-Backend) - [Live](https://zatta1.herokuapp.com/api/)`,
                         inline: true
                     },
-                    // {
-                    //     name: '\u200B', 
-                    //     value: '\u200B'
-                    // },
-                    // {
-                    //     name: "Project4 Frontend",
-                    //     value: `[Github](https://github.com/wenjase/frontend-project4) - [Live](https://www.google.com/)`,
-                    //     inline: true
-                    // },
-                    // {
-                    //     name: "Project4 Backend",
-                    //     value: `[Github](https://github.com/wenjase/project-4/tree/dev) - [Live](https://www.googel.com/)`,
-                    //     inline: true
-                    // }
+                    {
+                        name: '\u200B', 
+                        value: '\u200B'
+                    },
+                    {
+                        name: "Project4 Frontend",
+                        value: `[Github](https://github.com/wenjase/frontend-project4)`,
+                        inline: true
+                    },
+                    {
+                        name: "Project4 Backend",
+                        value: `[Github](https://github.com/wenjase/project-4/tree/dev)`,
+                        inline: true
+                    }
                     
                 ])
                 .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
