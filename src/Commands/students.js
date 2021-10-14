@@ -439,6 +439,77 @@ module.exports = new Command({
                     .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
                     message.channel.send({ embeds: [embed] });
                 break;
+            case ("jesse"): 
+                embed
+                    .setTitle("Jesse Watson")
+                    .setDescription("This is a collection of information and links related to Jesse Watson")
+                    .setColor('GREEN')
+                    .setThumbnail(client.user.avatarURL({dynamic: true}))
+                    .setTimestamp()
+                    .setImage("https://avatars.githubusercontent.com/u/81524053?v=4") // link to pic of Jesse
+                    .addFields([
+                        {
+                            name: "Github",
+                            value: `[Link](https://github.com/Jexxer)`,
+                            inline: true
+                        },
+                        {
+                            name: "Linkedin",
+                            value: `[Link](https://www.linkedin.com/in/jwatsoncode/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Portfolio",
+                            value: `[Link](https://www.jessewatson.dev/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', // empty field for line breaks
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project1",
+                            value: `[Github](https://github.com/Jexxer/Jexxer.github.io)\n[Live Site](https://jexxer.github.io/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project2",
+                            value: `[Github](https://github.com/Jexxer/MarvelDB)\n[Live Site](https://marveldb-app.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project3 Frontend",
+                            value: `[Github](https://github.com/Jexxer/Project-3) - [Live](https://bugtrakker.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project3 Backend",
+                            value: `[Github](https://github.com/Jexxer/Project-3-backend) - [Live](https://bugtracker-api-v1.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: '\u200B', 
+                            value: '\u200B'
+                        },
+                        {
+                            name: "Project4 Frontend",
+                            value: `[Github](https://github.com/Jexxer/flint) - [Live](https://flint-finance.herokuapp.com/)`,
+                            inline: true
+                        },
+                        {
+                            name: "Project4 Backend",
+                            value: `[Github](https://github.com/Jexxer/flint-server) - [Live](https://flint-server.herokuapp.com/)`,
+                            inline: true
+                        },
+                        
+                    ])
+                    .setFooter("Made by Jesse Watson", "https://i.imgur.com/H4Cca0E.png")
+                    message.channel.send({ embeds: [embed] });
+                break;
             case "test": 
                 message.reply("test works!");
                 break;
